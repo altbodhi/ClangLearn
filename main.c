@@ -20,12 +20,10 @@ int *newarray;
 	}
 
 	for(int j = 0;j < array_length ; j++){
-		int c = array[j];		
 		for(int k = j;k < array_length ; k++){
-			if(c>array[k]){
-				        	
-				int s = array[k];
-					array[j] = s;
+			if(array[j]>array[k]){
+					int c = array[j];		
+					array[j] = array[k];
 					array[k] = c;
 			}
 		}
